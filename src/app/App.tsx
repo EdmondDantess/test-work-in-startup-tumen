@@ -15,9 +15,7 @@ function App() {
                     </div>
                 </div>
                 <div className={'App__body_right'}>
-
                     <div className={'App__title'}><span>Задачи</span></div>
-
                     <Table/>
                 </div>
             </div>

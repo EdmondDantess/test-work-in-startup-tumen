@@ -18,7 +18,7 @@ export const TableCell: React.FC<TableCellType> = ({value, isHeader}) => {
     }
 
     return (
-        <td className={`table__cell  ${isHeader && 'table__cell-header'}`}>
+        <td className={`table__cell  ${isHeader && 'table__cell-header'}`} title={value}>
             {
                 statusWork.includes(value)
                     ? <select value={status} className={'cell__selector'}
