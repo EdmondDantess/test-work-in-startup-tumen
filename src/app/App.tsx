@@ -5,25 +5,33 @@ import { Header } from '../features/header/Header';
 import squares from '../assets/svg/squares.svg';
 
 function App() {
-  return <div className='App'>
-    <Header />
-    <div className={'App__body'}>
-      <div className={'App__body-container'}>
-        <div className={'App__body_left'}>
-          <div className={'body__square'}>
-            <img src={squares} alt='squares' />
+  return (
+    <div className='App'>
+      <Header />
+      <div className={'App__body'}>
+        <div className={'App__body-container'}>
+          <div className={'App__body_left'}>
+            <div className={'body__square'}>
+              <img src={squares} alt='squares' />
+            </div>
           </div>
-        </div>
-        <div className={'App__body_right'}>
-          <a rel={'noreferrer'} href='https://github.com/EdmondDantess/test-work-in-startup-tumen'
-             target={'_blank'}>Посмотреть код на GitHub</a>
-          <div className={'App__title'}><span>Задачи</span></div>
-          <Table />
+          <div className={'App__body_right'}>
+            <a
+              rel={'noreferrer'}
+              href='https://github.com/EdmondDantess/test-work-in-startup-tumen'
+              target={'_blank'}
+            >
+              Посмотреть код на GitHub
+            </a>
+            <div className={'App__title'}>
+              <span>Задачи</span>
+            </div>
+            <Table />
+          </div>
         </div>
       </div>
     </div>
-
-  </div>;
+  );
 }
 
 export default App;

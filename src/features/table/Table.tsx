@@ -5,7 +5,6 @@ import { dataForTableCategory, generateData } from './data';
 import { GenerateTableRows } from './GenerateTableRows/GenerateTableRows';
 import { GenerateCategoryRows } from './GenerateCategoryRows/GenerateCategoryRows';
 
-
 export const Table = () => {
   const [category, setCategory] = useState(dataForTableCategory);
 
@@ -14,12 +13,16 @@ export const Table = () => {
   }, []);
 
   const showTasksHandler = (index: number) => {
-    let changedCategory = category.map((c) => {
+    const changedCategory = category.map((c) => {
       return {
-        ...c, status: false,
+        ...c,
+        status: false,
       };
     });
-    changedCategory[index] = { title: category[index].title, status: !category[index].status };
+    changedCategory[index] = {
+      title: category[index].title,
+      status: !category[index].status,
+    };
     setCategory([...changedCategory]);
   };
 
@@ -27,16 +30,18 @@ export const Table = () => {
     <table className={'table'}>
       <TableHeader />
       <tbody>
-      {
-        category.map((c, i) => {
+        {category.map((c, i) => {
           return (
             <React.Fragment key={i}>
-              <GenerateCategoryRows c={c} i={i} showTasksHandler={showTasksHandler} />
+              <GenerateCategoryRows
+                c={c}
+                i={i}
+                showTasksHandler={showTasksHandler}
+              />
               <GenerateTableRows c={c} memoizedData={memoizedData} />
             </React.Fragment>
           );
-        })
-      }
+        })}
       </tbody>
     </table>
   );

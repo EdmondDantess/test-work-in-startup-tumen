@@ -11,7 +11,11 @@ export const Header = () => {
           <div className={'left-block__text'}>Проект</div>
         </div>
         <div className={'header-app__right-block'}>
-          <img src={notification} alt='notification' className={'right-block__notification'} />
+          <img
+            src={notification}
+            alt="notification"
+            className={'right-block__notification'}
+          />
           <div className={'right-block__avatar'}></div>
           <div className={'right-block__name-title'}>
             <div className={'name-title__name'}>Иванов В.А.</div>
@@ -20,6 +24,5 @@ export const Header = () => {
         </div>
       </div>
     </div>
-
   );
 };

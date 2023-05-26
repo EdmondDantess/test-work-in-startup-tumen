@@ -1,26 +1,23 @@
 module.exports = {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true
-        }
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    env: {
-        browser: true,
-        node: true,
-        es6: true
-    },
-    plugins: ['react', 'prettier', '@typescript-eslint'],
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'prettier'
-    ],
-    rules: {
-        'prettier/prettier': ['error'],
-        'react/prop-types': [0]
-    }
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['react', 'prettier'],
+  rules: {
+    'no-unused-vars': 'off',
+    'react/no-unescaped-entities': 0,
+    'react/prop-types': 0,
+    'prettier/prettier': 0, // Обязательно!! Подсвечивает ошибки из Prettier.
+  },
 };
