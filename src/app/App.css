@@ -1,0 +1,55 @@
+.App {
+}
+
+.App__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App__title {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    height: 76.48px;
+}
+
+.App__title span {
+    margin-left: 53px;
+}
+
+.App__body-container {
+    width: 89%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.App__body_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80px;
+    border-right: 1px dotted gray;
+    min-height: 100vh;
+}
+
+.body__square {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 54px;
+    width: 56px;
+    height: 52px;
+    background-color: #E2E2EA;
+    border-radius: 8px;
+}
+
+.body__square img {
+    width: 16px
+}

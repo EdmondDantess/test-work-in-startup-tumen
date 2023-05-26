@@ -1,0 +1,45 @@
+.table {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.table__category {
+    display: flex;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #E1E1FB;
+    height: 47px;
+}
+
+.table__category span {
+    width: 211px;
+}
+
+.table__category img:hover {
+    opacity: 0.5;
+}
+
+.table__category:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.table_show {
+    transition: all 1.3s ease-out;
+    overflow: hidden;
+}
+
+.table_close {
+    transition: all 1.3s ease-out;
+    overflow: hidden;
+}
+

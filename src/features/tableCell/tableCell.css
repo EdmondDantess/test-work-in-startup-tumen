@@ -1,0 +1,94 @@
+.table__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 66px;
+    color: #11142D;
+    opacity: 0.8;
+    letter-spacing: 0.008em;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    overflow: clip;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.table__cell-header {
+    font-weight: 700;
+    background-color: #F7F7FC;
+
+}
+
+.table__cell:nth-child(1) {
+    width: 99px;
+}
+
+.table__cell:nth-child(2) {
+    width: 75px;
+}
+
+.table__cell:nth-child(3) {
+    width: 77px;
+}
+
+.table__cell:nth-child(4) {
+    width: 171px;
+}
+
+.table__cell:nth-child(5) {
+    width: 113px;
+}
+
+.table__cell:nth-child(6) {
+    width: 123px;
+}
+
+.table__cell:nth-child(7) {
+    width: 134px;
+}
+
+.table__cell:nth-child(8) {
+    width: 101px;
+}
+
+.table__cell:nth-child(9) {
+    width: 121px;
+}
+
+.table__cell:nth-child(10) {
+    width: 82px;
+}
+
+.table__cell:nth-child(11) {
+    width: 82px;
+}
+
+.table__cell:nth-child(12) {
+    width: 105px;
+}
+
+.table__cell:nth-child(13) {
+    width: 105px;
+}
+td {
+    width: auto;
+}
+
+.cell__selector {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 4px;
+    gap: 22px;
+    width: 111px;
+    height: 36px;
+    border: 0.5px solid #000000;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
