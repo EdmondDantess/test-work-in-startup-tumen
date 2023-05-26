@@ -39,7 +39,7 @@ a {
     justify-content: center;
     width: 80px;
     border-right: 1px dotted gray;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
 }
 
 .App__body_right {
