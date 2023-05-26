@@ -1,5 +1,4 @@
 .table__row {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
