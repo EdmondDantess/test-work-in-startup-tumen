@@ -1,5 +1,5 @@
 a {
-    position: fixed;
+    position: sticky;
     background-color: red;
     font-weight: bold;
     color: #F7F7FC;
@@ -14,7 +14,7 @@ a {
 }
 
 .App__title {
-    position: fixed;
+    position: sticky;
     display: flex;
     align-items: flex-end;
     font-family: 'Mulish', sans-serif;
